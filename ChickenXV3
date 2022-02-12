@@ -12,6 +12,7 @@ local kocmocguibeeswarm = Instance.new("TextButton")
 local Destroygui = Instance.new("TextButton")
 local SpeedySimulator = Instance.new("TextButton")
 
+--Properties:
 
 ChickenX.Name = "Chicken X"
 ChickenX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -147,7 +148,7 @@ SpeedySimulator.TextSize = 20.000
 
 -- Scripts:
 
-local function XHKLGRP_fake_script() -- BarkGui.LocalScript 
+local function EJABVO_fake_script() -- BarkGui.LocalScript 
 	local script = Instance.new('LocalScript', BarkGui)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -156,8 +157,8 @@ local function XHKLGRP_fake_script() -- BarkGui.LocalScript
 	
 	
 end
-coroutine.wrap(XHKLGRP_fake_script)()
-local function GIWOKAV_fake_script() -- BloodGUI.LocalScript 
+coroutine.wrap(EJABVO_fake_script)()
+local function OYRG_fake_script() -- BloodGUI.LocalScript 
 	local script = Instance.new('LocalScript', BloodGUI)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -167,8 +168,8 @@ local function GIWOKAV_fake_script() -- BloodGUI.LocalScript
 	
 	
 end
-coroutine.wrap(GIWOKAV_fake_script)()
-local function OAITHH_fake_script() -- DarkDex.LocalScript 
+coroutine.wrap(OYRG_fake_script)()
+local function LXRIXH_fake_script() -- DarkDex.LocalScript 
 	local script = Instance.new('LocalScript', DarkDex)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -239,8 +240,8 @@ local function OAITHH_fake_script() -- DarkDex.LocalScript
 	
 	
 end
-coroutine.wrap(OAITHH_fake_script)()
-local function LORAU_fake_script() -- DragonDupe.LocalScript 
+coroutine.wrap(LXRIXH_fake_script)()
+local function WVKEFF_fake_script() -- DragonDupe.LocalScript 
 	local script = Instance.new('LocalScript', DragonDupe)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -249,8 +250,8 @@ local function LORAU_fake_script() -- DragonDupe.LocalScript
 	
 	
 end
-coroutine.wrap(LORAU_fake_script)()
-local function IBDQV_fake_script() -- InfiniteYield.LocalScript 
+coroutine.wrap(WVKEFF_fake_script)()
+local function AMAOUB_fake_script() -- InfiniteYield.LocalScript 
 	local script = Instance.new('LocalScript', InfiniteYield)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -259,8 +260,8 @@ local function IBDQV_fake_script() -- InfiniteYield.LocalScript
 	
 	
 end
-coroutine.wrap(IBDQV_fake_script)()
-local function QBZWGRK_fake_script() -- PrintHi.LocalScript 
+coroutine.wrap(AMAOUB_fake_script)()
+local function DPUH_fake_script() -- PrintHi.LocalScript 
 	local script = Instance.new('LocalScript', PrintHi)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -269,8 +270,8 @@ local function QBZWGRK_fake_script() -- PrintHi.LocalScript
 	
 	
 end
-coroutine.wrap(QBZWGRK_fake_script)()
-local function USME_fake_script() -- YouGetScriptArsenal.LocalScript 
+coroutine.wrap(DPUH_fake_script)()
+local function KGYJSIP_fake_script() -- YouGetScriptArsenal.LocalScript 
 	local script = Instance.new('LocalScript', YouGetScriptArsenal)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -279,18 +280,18 @@ local function USME_fake_script() -- YouGetScriptArsenal.LocalScript
 	
 	
 end
-coroutine.wrap(USME_fake_script)()
-local function IRPGSI_fake_script() -- kocmocguibeeswarm.LocalScript 
+coroutine.wrap(KGYJSIP_fake_script)()
+local function ILFH_fake_script() -- kocmocguibeeswarm.LocalScript 
 	local script = Instance.new('LocalScript', kocmocguibeeswarm)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/kocmoc.lua"))()
+		loadstring(game:HttpGet("raw.githubusercontent.com/timcheno3o/chicken-hub-parody-/main/Chickenhubparody"))()
 	end)
 	
 	
 end
-coroutine.wrap(IRPGSI_fake_script)()
-local function HFCYQC_fake_script() -- Destroygui.LocalScript 
+coroutine.wrap(ILFH_fake_script)()
+local function PAIF_fake_script() -- Destroygui.LocalScript 
 	local script = Instance.new('LocalScript', Destroygui)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -298,8 +299,8 @@ local function HFCYQC_fake_script() -- Destroygui.LocalScript
 		script.Parent.Parent.Parent.openframe.Visible = false
 	end)
 end
-coroutine.wrap(HFCYQC_fake_script)()
-local function HJNYDA_fake_script() -- SpeedySimulator.LocalScript 
+coroutine.wrap(PAIF_fake_script)()
+local function OCYZLM_fake_script() -- SpeedySimulator.LocalScript 
 	local script = Instance.new('LocalScript', SpeedySimulator)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -308,4 +309,4 @@ local function HJNYDA_fake_script() -- SpeedySimulator.LocalScript
 	
 	
 end
-coroutine.wrap(HJNYDA_fake_script)()
+coroutine.wrap(OCYZLM_fake_script)()
