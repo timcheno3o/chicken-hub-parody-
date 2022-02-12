@@ -1,0 +1,311 @@
+local ChickenX = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local BarkGui = Instance.new("TextButton")
+local BloodGUI = Instance.new("TextButton")
+local DarkDex = Instance.new("TextButton")
+local DragonDupe = Instance.new("TextButton")
+local InfiniteYield = Instance.new("TextButton")
+local PrintHi = Instance.new("TextButton")
+local YouGetScriptArsenal = Instance.new("TextButton")
+local kocmocguibeeswarm = Instance.new("TextButton")
+local Destroygui = Instance.new("TextButton")
+local SpeedySimulator = Instance.new("TextButton")
+
+
+ChickenX.Name = "Chicken X"
+ChickenX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ChickenX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ChickenX
+main.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+main.Position = UDim2.new(0, 138, 0, 140)
+main.Size = UDim2.new(0, 749, 0, 391)
+main.Active = true
+main.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = main
+Title.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Title.BorderSizePixel = 2
+Title.Size = UDim2.new(0.998603344, 0, 0.127877235, 0)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Chicken X - Script Hub V3  | Made by Ktemp#8971"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 20.000
+
+BarkGui.Name = "Bark Gui"
+BarkGui.Parent = main
+BarkGui.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+BarkGui.BorderColor3 = Color3.fromRGB(15, 23, 30)
+BarkGui.Position = UDim2.new(0, 22, 0, 62)
+BarkGui.Size = UDim2.new(0, 194, 0, 50)
+BarkGui.Font = Enum.Font.SourceSans
+BarkGui.Text = "Bark Gui lumber tycoon 2"
+BarkGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+BarkGui.TextSize = 20.000
+
+BloodGUI.Name = "Blood GUI"
+BloodGUI.Parent = main
+BloodGUI.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+BloodGUI.BorderColor3 = Color3.fromRGB(15, 23, 30)
+BloodGUI.Position = UDim2.new(0, 271, 0, 62)
+BloodGUI.Size = UDim2.new(0, 207, 0, 50)
+BloodGUI.Font = Enum.Font.SourceSans
+BloodGUI.Text = "Blood GUI lumber tycoon 2"
+BloodGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+BloodGUI.TextSize = 20.000
+
+DarkDex.Name = "Dark Dex"
+DarkDex.Parent = main
+DarkDex.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+DarkDex.BorderColor3 = Color3.fromRGB(15, 23, 30)
+DarkDex.Position = UDim2.new(0, 271, 0, 146)
+DarkDex.Size = UDim2.new(0, 207, 0, 50)
+DarkDex.Font = Enum.Font.SourceSans
+DarkDex.Text = "Dark Dex"
+DarkDex.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkDex.TextSize = 20.000
+
+DragonDupe.Name = "Dragon Dupe"
+DragonDupe.Parent = main
+DragonDupe.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+DragonDupe.BorderColor3 = Color3.fromRGB(15, 23, 30)
+DragonDupe.Position = UDim2.new(0, 526, 0, 62)
+DragonDupe.Size = UDim2.new(0, 194, 0, 50)
+DragonDupe.Font = Enum.Font.SourceSans
+DragonDupe.Text = "Dragon Dupe lumber tyoon 2"
+DragonDupe.TextColor3 = Color3.fromRGB(255, 255, 255)
+DragonDupe.TextSize = 20.000
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = main
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+InfiniteYield.BorderColor3 = Color3.fromRGB(15, 23, 30)
+InfiniteYield.Position = UDim2.new(0, 22, 0, 232)
+InfiniteYield.Size = UDim2.new(0, 194, 0, 50)
+InfiniteYield.Font = Enum.Font.SourceSans
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.TextSize = 20.000
+
+PrintHi.Name = "Print Hi"
+PrintHi.Parent = main
+PrintHi.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+PrintHi.BorderColor3 = Color3.fromRGB(15, 23, 30)
+PrintHi.Position = UDim2.new(0, 271, 0, 232)
+PrintHi.Size = UDim2.new(0, 207, 0, 50)
+PrintHi.Font = Enum.Font.SourceSans
+PrintHi.Text = "Print Hi"
+PrintHi.TextColor3 = Color3.fromRGB(255, 255, 255)
+PrintHi.TextSize = 20.000
+
+YouGetScriptArsenal.Name = "You Get Script Arsenal"
+YouGetScriptArsenal.Parent = main
+YouGetScriptArsenal.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+YouGetScriptArsenal.BorderColor3 = Color3.fromRGB(15, 23, 30)
+YouGetScriptArsenal.Position = UDim2.new(0, 22, 0, 146)
+YouGetScriptArsenal.Size = UDim2.new(0, 194, 0, 50)
+YouGetScriptArsenal.Font = Enum.Font.SourceSans
+YouGetScriptArsenal.Text = "You Get Script Arsenal"
+YouGetScriptArsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+YouGetScriptArsenal.TextSize = 20.000
+
+kocmocguibeeswarm.Name = "kocmoc gui bee swarm"
+kocmocguibeeswarm.Parent = main
+kocmocguibeeswarm.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+kocmocguibeeswarm.BorderColor3 = Color3.fromRGB(15, 23, 30)
+kocmocguibeeswarm.Position = UDim2.new(0, 526, 0, 146)
+kocmocguibeeswarm.Size = UDim2.new(0, 194, 0, 50)
+kocmocguibeeswarm.Font = Enum.Font.SourceSans
+kocmocguibeeswarm.Text = "kocmoc gui bee swarm"
+kocmocguibeeswarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+kocmocguibeeswarm.TextSize = 20.000
+
+Destroygui.Name = "Destroy gui"
+Destroygui.Parent = main
+Destroygui.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Destroygui.BorderColor3 = Color3.fromRGB(27, 27, 27)
+Destroygui.Position = UDim2.new(0, 653, 0, 0)
+Destroygui.Size = UDim2.new(0, 96, 0, 50)
+Destroygui.Font = Enum.Font.SourceSans
+Destroygui.Text = "Destroy"
+Destroygui.TextColor3 = Color3.fromRGB(255, 255, 255)
+Destroygui.TextSize = 20.000
+
+SpeedySimulator.Name = "Speedy Simulator"
+SpeedySimulator.Parent = main
+SpeedySimulator.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+SpeedySimulator.BorderColor3 = Color3.fromRGB(15, 23, 30)
+SpeedySimulator.Position = UDim2.new(0, 526, 0, 232)
+SpeedySimulator.Size = UDim2.new(0, 194, 0, 50)
+SpeedySimulator.Font = Enum.Font.SourceSans
+SpeedySimulator.Text = "Speedy Simulator Script"
+SpeedySimulator.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedySimulator.TextSize = 20.000
+
+-- Scripts:
+
+local function XHKLGRP_fake_script() -- BarkGui.LocalScript 
+	local script = Instance.new('LocalScript', BarkGui)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync'https://cdn.applebee1558.com/bark/bark.lua')('2022 more like twenty-twenty-too')
+	end)
+	
+	
+end
+coroutine.wrap(XHKLGRP_fake_script)()
+local function GIWOKAV_fake_script() -- BloodGUI.LocalScript 
+	local script = Instance.new('LocalScript', BloodGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.BloodKey = "AVAV2701202201681silentHackeroddyHockeyAV02712022201681"
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BloodStillCool/666blood666/main/v16.85FREEdoNOTbuy2"))()
+	end)
+	
+	
+end
+coroutine.wrap(GIWOKAV_fake_script)()
+local function OAITHH_fake_script() -- DarkDex.LocalScript 
+	local script = Instance.new('LocalScript', DarkDex)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Dark Dex --
+	
+		if game:GetService'CoreGui':FindFirstChild'Dex' then
+			game:GetService'CoreGui'.Dex:Destroy();
+		end
+	
+		math.randomseed(tick())
+	
+		local charset = {}
+		for i = 48,  57 do table.insert(charset, string.char(i)) end
+		for i = 65,  90 do table.insert(charset, string.char(i)) end
+		for i = 97, 122 do table.insert(charset, string.char(i)) end
+		function RandomCharacters(length)
+			if length > 0 then
+				return RandomCharacters(length - 1) .. charset[math.random(1, #charset)]
+			else
+				return ""
+			end
+		end
+	
+		local Dex = game:GetObjects("rbxassetid://3567096419")[1]
+		Dex.Name = RandomCharacters(math.random(5, 20))
+		Dex.Parent = game:GetService("CoreGui")
+	
+		local function Load(Obj, Url)
+			local function GiveOwnGlobals(Func, Script)
+				local Fenv = {}
+				local RealFenv = {script = Script}
+				local FenvMt = {}
+				FenvMt.__index = function(a,b)
+					if RealFenv[b] == nil then
+						return getfenv()[b]
+					else
+						return RealFenv[b]
+					end
+				end
+				FenvMt.__newindex = function(a, b, c)
+					if RealFenv[b] == nil then
+						getfenv()[b] = c
+					else
+						RealFenv[b] = c
+					end
+				end
+				setmetatable(Fenv, FenvMt)
+				setfenv(Func, Fenv)
+				return Func
+			end
+	
+			local function LoadScripts(Script)
+				if Script.ClassName == "Script" or Script.ClassName == "LocalScript" then
+					spawn(function()
+						GiveOwnGlobals(loadstring(Script.Source, "=" .. Script:GetFullName()), Script)()
+					end)
+				end
+				for i,v in pairs(Script:GetChildren()) do
+					LoadScripts(v)
+				end
+			end
+	
+			LoadScripts(Obj)
+		end
+	
+		Load(Dex)
+	end)
+	
+	
+end
+coroutine.wrap(OAITHH_fake_script)()
+local function LORAU_fake_script() -- DragonDupe.LocalScript 
+	local script = Instance.new('LocalScript', DragonDupe)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/DragonDupe/SubscribeDragonDupe/main/DragonDupeGUI'))()
+	end)
+	
+	
+end
+coroutine.wrap(LORAU_fake_script)()
+local function IBDQV_fake_script() -- InfiniteYield.LocalScript 
+	local script = Instance.new('LocalScript', InfiniteYield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+	
+	
+end
+coroutine.wrap(IBDQV_fake_script)()
+local function QBZWGRK_fake_script() -- PrintHi.LocalScript 
+	local script = Instance.new('LocalScript', PrintHi)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Hi")
+	end)
+	
+	
+end
+coroutine.wrap(QBZWGRK_fake_script)()
+local function USME_fake_script() -- YouGetScriptArsenal.LocalScript 
+	local script = Instance.new('LocalScript', YouGetScriptArsenal)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.Menew.YouGot.Visible = true
+	end)
+	
+	
+end
+coroutine.wrap(USME_fake_script)()
+local function IRPGSI_fake_script() -- kocmocguibeeswarm.LocalScript 
+	local script = Instance.new('LocalScript', kocmocguibeeswarm)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/kocmoc.lua"))()
+	end)
+	
+	
+end
+coroutine.wrap(IRPGSI_fake_script)()
+local function HFCYQC_fake_script() -- Destroygui.LocalScript 
+	local script = Instance.new('LocalScript', Destroygui)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.openframe.Visible = false
+	end)
+end
+coroutine.wrap(HFCYQC_fake_script)()
+local function HJNYDA_fake_script() -- SpeedySimulator.LocalScript 
+	local script = Instance.new('LocalScript', SpeedySimulator)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/PQYMMWZD", true))()
+	end)
+	
+	
+end
+coroutine.wrap(HJNYDA_fake_script)()
