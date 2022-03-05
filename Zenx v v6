@@ -144,7 +144,7 @@ end)
 })
 
 local uhmmm = InnoCentCool.Button({
-    Text = "Bolts hub",
+    Text = "Bolts hub (Best Gui)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Jaytojuice/Bolts-Hub/main/Script/Free_Executors", true))()
     end,
