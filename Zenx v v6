@@ -1,0 +1,231 @@
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local X = Material.Load({
+    Title = "Zenx V V6",
+    Style = 3,
+    SizeX = 500,
+    SizeY = 350,
+    Theme = "Dark",
+})
+-- Pages
+local InnoCentCool = X.New({
+    Title = "Script Hub"
+})
+
+local Other stuff = X.New({
+    Title = "Change Logs"
+})
+
+local Creditss = X.New({
+    Title = "Credits"
+})
+
+-- Scripts
+local uh = InnoCentCool.Button({
+    Text = "Bark Gui lumber tycoon 2",
+    Callback = function()
+        loadstring(game:HttpGetAsync'https://cdn.applebee1558.com/bark/bark.lua')('2022 more like twenty-twenty-too')
+    end,
+})
+
+
+local uhm = InnoCentCool.Button({
+    Text = "Inno's Skin hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Innocentallity/Scripts/main/Skin%20Hub"))();
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Credit to Inno"
+            })
+        end
+    }
+}
+)
+
+local uhmm = InnoCentCool.Button({
+    Text = "Astro Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Storm99999/AstrohubV2/main/astrohub.lua"))()
+    end,
+     Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Credit to Storm"
+            })
+        end
+    }
+}
+)
+
+local uhmmm = InnoCentCool.Button({
+    Text = "Dragon Dupe",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/DragonDupe/SubscribeDragonDupe/main/DragonDupeGUI'))()
+    end,
+})
+
+local uhmmm = InnoCentCool.Button({
+    Text = "Arsenal you get ?? ui",
+    Callback = function()
+        game.Players.LocalPlayer.PlayerGui.Menew.YouGot.Visible = true
+    end,
+})
+local uhmmm = InnoCentCool.Button({
+    Text = "Dark Dex",
+    Callback = function()
+       script.Parent.MouseButton1Click:Connect(function()
+	-- Dark Dex --
+
+	if game:GetService'CoreGui':FindFirstChild'Dex' then
+		game:GetService'CoreGui'.Dex:Destroy();
+	end
+
+	math.randomseed(tick())
+
+	local charset = {}
+	for i = 48,  57 do table.insert(charset, string.char(i)) end
+	for i = 65,  90 do table.insert(charset, string.char(i)) end
+	for i = 97, 122 do table.insert(charset, string.char(i)) end
+	function RandomCharacters(length)
+		if length > 0 then
+			return RandomCharacters(length - 1) .. charset[math.random(1, #charset)]
+		else
+			return ""
+		end
+	end
+
+	local Dex = game:GetObjects("rbxassetid://3567096419")[1]
+	Dex.Name = RandomCharacters(math.random(5, 20))
+	Dex.Parent = game:GetService("CoreGui")
+
+	local function Load(Obj, Url)
+		local function GiveOwnGlobals(Func, Script)
+			local Fenv = {}
+			local RealFenv = {script = Script}
+			local FenvMt = {}
+			FenvMt.__index = function(a,b)
+				if RealFenv[b] == nil then
+					return getfenv()[b]
+				else
+					return RealFenv[b]
+				end
+			end
+			FenvMt.__newindex = function(a, b, c)
+				if RealFenv[b] == nil then
+					getfenv()[b] = c
+				else
+					RealFenv[b] = c
+				end
+			end
+			setmetatable(Fenv, FenvMt)
+			setfenv(Func, Fenv)
+			return Func
+		end
+
+		local function LoadScripts(Script)
+			if Script.ClassName == "Script" or Script.ClassName == "LocalScript" then
+				spawn(function()
+					GiveOwnGlobals(loadstring(Script.Source, "=" .. Script:GetFullName()), Script)()
+				end)
+			end
+			for i,v in pairs(Script:GetChildren()) do
+				LoadScripts(v)
+			end
+		end
+
+		LoadScripts(Obj)
+	end
+
+	Load(Dex)
+end)
+    end,
+})
+
+local uhmmm = InnoCentCool.Button({
+    Text = "Bolts hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jaytojuice/Bolts-Hub/main/Script/Free_Executors", true))()
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Credit to Storm"
+            })
+        end
+    }
+}
+)
+
+local uhmmm = InnoCentCool.Button({
+    Text = "Old Zenx V (v5)",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/SHuU4HYV", true))()
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "made by me"
+            })
+        end
+    }
+}
+)
+
+local uhmmmm = Other stuff.Button({
+    Text = "[+] new UI",
+    Callback = function()
+        
+    end,
+})
+
+local uhmmmmm = Other stuff.Button({
+    Text = "[+] Added some new scripts",
+    Callback = function()
+        
+    end,
+
+})
+
+local uhmmmmm = Other stuff.Button({
+    Text = "[-] removed owl hub, and dark hub bolts hub is better ",
+    Callback = function()
+        
+    end,
+
+})
+
+
+local uhmmmmmmm = Creditss.Label({
+    Text = "Bcket#6308",
+    Callback = function()
+        
+    end,
+
+})
+
+local uhmmmmmmmm = Creditss.Label({
+    Text = "Ktemp#8971",
+    Callback = function()
+        
+    end,
+
+})
+
+
+local uhmmmmmmmmm = Creditss.Button({
+    Text = "Copy discord invite",
+    Callback = function()
+     setclipboard("https://discord.gg/smE4Vrucdx")   
+    end,
+
+})
+
+
+
+
+
+print("Loaded")
+wait (3)
+print("fuckers")
