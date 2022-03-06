@@ -191,14 +191,14 @@ local uhmmm = InnoCentCool.Button({
 }
 )
 
-local uhmmmm = Other stuff.Label({
+local uhmmmm = Other stuff.Button({
     Text = "[+] new UI",
     Callback = function()
         
     end,
 })
 
-local uhmmmmm = Other stuff.Label({
+local uhmmmmm = Other stuff.Button({
     Text = "[+] Added some new scripts",
     Callback = function()
         
@@ -206,7 +206,7 @@ local uhmmmmm = Other stuff.Label({
 
 })
 
-local uhmmmmm = Other stuff.Label({
+local uhmmmmm = Other stuff.Button({
     Text = "[-] removed owl hub, and dark hub bolts hub is better ",
     Callback = function()
         
