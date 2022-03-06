@@ -69,6 +69,12 @@ local uhmmm = InnoCentCool.Button({
 local uhmmm = InnoCentCool.Button({
     Text = "Arsenal you get ?? ui",
     Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end,
+
+local uhmmm = InnoCentCool.Button({
+    Text = "Arsenal you get ?? ui",
+    Callback = function()
         game.Players.LocalPlayer.PlayerGui.Menew.YouGot.Visible = true
     end,
 })
