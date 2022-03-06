@@ -22,14 +22,6 @@ local Creditss = X.New({
 
 -- Scripts
 local uh = InnoCentCool.Button({
-    Text = "Destroy Gui",
-    Callback = function()
-        script.Parent.Parent.Visible = false
-	script.Parent.Parent.Parent.openframe.Visible = false
-    end,
-})
-
-local uh = InnoCentCool.Button({
     Text = "Bark Gui lumber tycoon 2",
     Callback = function()
         loadstring(game:HttpGetAsync'https://cdn.applebee1558.com/bark/bark.lua')('2022 more like twenty-twenty-too')
