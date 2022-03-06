@@ -51,6 +51,21 @@ local uhm = InnoCentCool.Button({
 }
 )
 
+local uhm = InnoCentCool.Button({
+    Text = "Zenxmoc Bee Swarm Simulator",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/timcheno3o/chicken-hub-parody-/main/Zenxmoc"))()
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "A parody to the Kocmoc gui"
+            })
+        end
+    }
+}
+)
+
 local uhmm = InnoCentCool.Button({
     Text = "Astro Hub",
     Callback = function()
