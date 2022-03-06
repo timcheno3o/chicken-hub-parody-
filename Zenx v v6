@@ -66,15 +66,6 @@ local uhmmm = InnoCentCool.Button({
     end,
 })
 
-
-
-local uhmmm = InnoCentCool.Button({
-    Text = "Infinite Yield",
-    Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-    end,
-})
-
 local uhmmm = InnoCentCool.Button({
     Text = "Arsenal you get ?? ui",
     Callback = function()
@@ -85,8 +76,7 @@ local uhmmm = InnoCentCool.Button({
 local uhmmm = InnoCentCool.Button({
     Text = "Dark Dex",
     Callback = function()
-       script.Parent.MouseButton1Click:Connect(function()
-	-- Dark Dex --
+        -- Dark Dex --
 
 	if game:GetService'CoreGui':FindFirstChild'Dex' then
 		game:GetService'CoreGui'.Dex:Destroy();
@@ -149,9 +139,20 @@ local uhmmm = InnoCentCool.Button({
 	end
 
 	Load(Dex)
-end)
+
+    
+
     end,
-})
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Dumb"
+            })
+        end
+    }
+}
+)
+
 
 local uhmmm = InnoCentCool.Button({
     Text = "Bolts hub (Best Gui)",
@@ -272,14 +273,14 @@ local uhmmm = InnoCentCool.Button({
 }
 )
 
-local uhmmmm = Other stuff.Button({
+local uhmmmm = Other stuff.Label({
     Text = "[+] new UI",
     Callback = function()
         
     end,
 })
 
-local uhmmmmm = Other stuff.Button({
+local uhmmmmm = Other stuff.Label({
     Text = "[+] Added some new scripts",
     Callback = function()
         
@@ -287,7 +288,7 @@ local uhmmmmm = Other stuff.Button({
 
 })
 
-local uhmmmmm = Other stuff.Button({
+local uhmmmmm = Other stuff.Label({
     Text = "[-] removed owl hub, and dark hub bolts hub is better ",
     Callback = function()
         
@@ -305,6 +306,14 @@ local uhmmmmmmm = Creditss.Label({
 
 local uhmmmmmmm = Creditss.Label({
     Text = "Bcket#6308",
+    Callback = function()
+        
+    end,
+
+})
+
+local uhmmmmmmm = Creditss.Label({
+    Text = "timchen030",
     Callback = function()
         
     end,
