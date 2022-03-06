@@ -66,11 +66,7 @@ local uhmmm = InnoCentCool.Button({
     end,
 })
 
-local uhmmm = InnoCentCool.Button({
-    Text = "Infinite Yield",
-    Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-    end,
+
 
 local uhmmm = InnoCentCool.Button({
     Text = "Arsenal you get ?? ui",
@@ -78,6 +74,14 @@ local uhmmm = InnoCentCool.Button({
         game.Players.LocalPlayer.PlayerGui.Menew.YouGot.Visible = true
     end,
 })
+
+local uhmmm = InnoCentCool.Button({
+    Text = "Arsenal you get ?? ui",
+    Callback = function()
+        game.Players.LocalPlayer.PlayerGui.Menew.YouGot.Visible = true
+    end,
+})
+
 local uhmmm = InnoCentCool.Button({
     Text = "Dark Dex",
     Callback = function()
