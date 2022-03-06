@@ -28,6 +28,13 @@ local uh = InnoCentCool.Button({
     end,
 })
 
+local uh = InnoCentCool.Button({
+    Text = "Infinite Yield",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end,
+})
+
 
 local uhm = InnoCentCool.Button({
     Text = "Inno's Skin hub",
