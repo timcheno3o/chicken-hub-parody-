@@ -1,7 +1,7 @@
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local X = Material.Load({
-    Title = "Zenx V V6",
+    Title = "Zenx V V6 | Mady By BCKET#6308",
     Style = 3,
     SizeX = 500,
     SizeY = 350,
@@ -285,17 +285,16 @@ local uhmmmmm = Other stuff.Button({
 
 })
 
-
 local uhmmmmmmm = Creditss.Label({
-    Text = "Bcket#6308",
+    Text = "Made by:",
     Callback = function()
         
     end,
 
 })
 
-local uhmmmmmmmm = Creditss.Label({
-    Text = "Ktemp#8971",
+local uhmmmmmmm = Creditss.Label({
+    Text = "Bcket#6308",
     Callback = function()
         
     end,
