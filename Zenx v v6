@@ -184,7 +184,7 @@ local uhmmm = InnoCentCool.Button({
     Menu = {
         Information = function(self)
             X.Banner({
-                Text = "Credit to Storm"
+                Text = "Credit to Storm and Bolts"
             })
         end
     }
@@ -222,7 +222,15 @@ local uhmmmmm = Other stuff.Button({
 })
 
 local uhmmmmm = Other stuff.Button({
-    Text = "[-] removed owl hub, and dark hub bolts hub is better ",
+    Text = "[-] removed owl hu and dark hub. Bolts hub is better",
+    Callback = function()
+        
+    end,
+
+})
+
+local uhmmmmm = Other stuff.Label({
+    Text = "Updated as of march 5th 2022",
     Callback = function()
         
     end,
