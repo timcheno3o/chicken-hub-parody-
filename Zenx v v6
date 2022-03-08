@@ -29,7 +29,7 @@ local Creditss = X.New({
 local uhmmm = InnoCentCool.Button({
     Text = "Bolts hub (Best Gui) Arsenal",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jaytojuice/Bolts-Hub/main/Script/Free_Executors", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/BoltsHubV5"))()
     end,
     Menu = {
         Information = function(self)
