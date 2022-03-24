@@ -373,6 +373,7 @@ FEW = main:Tab('Gun Mods')
 Bolts = main:Tab('LocalPlayer')
 VisualsW = main:Tab('Visuals')
 ServerW = main:Tab('Fe Stuff')
+Bedwars = main:Tab('Melee change')
 ServerL = main:Tab('Update Log')
 MiscW = main:Tab('Credits')
 
@@ -1179,11 +1180,6 @@ end)
 
 Bolts:Button('Get Rid Of Nerf Ad',function()
 	game.Players.LocalPlayer.PlayerGui.Menew.Main.Promotions.Scroller.current:Destroy()
-end)
-Bolts:Button('Dagger To Nights Edge', function()
-	-- logical right
-	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Name = "fart ur ass"
-	game:GetService("ReplicatedStorage").Viewmodels["v_Night's Edge"].Name = "v_Dagger"
 end)
 
 Bolts:Slider('Gravity',0.1, 100, function(value)
@@ -2342,10 +2338,70 @@ ServerW:Button('*FE* Invisible (Press then press go invisable then clsoe the gui
 	SubFrame.Rigtype.Text = ('Your Rigtype - %s'):format(CheckRig())
 end)
 
-ServerL:Label('-Added New Loader')
-ServerL:Label('-Added Bypassed Gun Mods')
-ServerL:Label('-Added Bypassed More Stuff')
-ServerL:Label('-Added Better TP To Random')
+Bedwars:Label('Bedwars items:')
+
+Bedwars:Button('Dagger to Crossbow',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://6865031064" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://6841831557" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+Bedwars:Button('Dagger to Bow',function()
+
+		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://6861067722" -- put rbx mesh
+		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://5194138714" -- put rbx texture
+		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+Bedwars:Button('Dagger to Wooden Pickaxe',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://4903570273" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://4857011580" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+Bedwars:Button('Dagger to Stone Sword',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://6770061096" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://6770061121" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+Bedwars:Button('Dagger to Wooden Sword',function()
+
+			game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://6770060739" -- put rbx mesh
+			game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://6770060782" -- put rbx texture
+			game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+			game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+Bedwars:Label('misc/arsenal items:')
+
+Bedwars:Button('Dagger To Gorilla melee', function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://5390501239" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://5390501421" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Whern Day Brekas"].Part.MeshId = "rbxassetid://5390501239" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Whern Day Brekas"].Part.TextureID = "rbxassetid://5390501421" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Whern Day Brekas"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Whern Day Brekas"].Handle.Transparency = 1
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Night's Edge"].Part.MeshId = "rbxassetid://5390501239" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Night's Edge"].Part.TextureID = "rbxassetid://5390501421" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Night's Edge"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Night's Edge"].Handle.Transparency = 1
+end)
+
+
+ServerL:Label('-Added melee change page')
 _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
@@ -2360,4 +2416,5 @@ end)
 MiscW:Label('Zenx Hub v7 - Arsenal')
 MiscW:Label('RightShift To Toggle The Gui :D')
 MiscW:Label('Ktemp#8971 - Owner')
+MiscW:Label('Nillo - Developer')
 MiscW:Label('Dark Hub Devs For UI Lib')
