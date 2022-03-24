@@ -2419,7 +2419,7 @@ _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 MiscW:Button('Click To Copy Discord Invite',function()
 
-	setclipboard("discord.gg/CQz5CQKv89")
+	setclipboard("https://discord.gg/smE4Vrucdx")
 end)
 MiscW:Label('Zenx Hub v7 - Arsenal')
 MiscW:Label('RightShift To Toggle The Gui :D')
