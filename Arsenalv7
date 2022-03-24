@@ -53,7 +53,7 @@ gamechecktext.BackgroundTransparency = 1
 gamechecktext.Position = UDim2.new(0.266666681, 0, 0.300000012, 0)
 gamechecktext.Size = UDim2.new(0, 189, 0, 50)
 gamechecktext.Font = Enum.Font.SourceSans
-gamechecktext.Text = "Bypassing Some Anti Cheats"
+gamechecktext.Text = "Bypassing Anti Cheats"
 gamechecktext.TextColor3 = Color3.new(0, 0, 0)
 gamechecktext.TextSize = 25
 gamechecktext.TextWrapped = true
@@ -79,7 +79,7 @@ credits.BackgroundTransparency = 1
 credits.Position = UDim2.new(-0.0866666734, 0, 0.883333325, 0)
 credits.Size = UDim2.new(0, 281, 0, 50)
 credits.Font = Enum.Font.Highway
-credits.Text = "Bolts#8888"
+credits.Text = "Ktemp#8971"
 credits.TextColor3 = Color3.new(0, 0, 0)
 credits.TextSize = 18
 credits.TextWrapped = true
@@ -592,7 +592,7 @@ CombatW:Button('Kill All (After you toggle you can use any guns)',function()
 	function sayMessage(option)
 		if game.Players.LocalPlayer.Status.Team.Value ~= "Spectator" then
 			local Message = option
-			game.ReplicatedStorage.Events.PlayerChatted:FireServer("Trolling42", "  Bolts Hub Winning!", false, false, true)
+			game.ReplicatedStorage.Events.PlayerChatted:FireServer("Trolling42", "   Zenx Hub Winning!", false, false, true)
 		end
 	end
 
@@ -1749,73 +1749,45 @@ VisualsW:Colorpicker(
 	end
 )
 
-ServerW:Button('FE Purple Team (Very Real Not Fake Audio Must Be On Or No Work)',function()
-	function e(p,y) 
-		local gui = Instance.new("ScreenGui")
-		gui.DisplayOrder = 0
-		gui.ResetOnSpawn = false
-		local sound = Instance.new("Sound",gui)
-		sound.SoundId = "rbxassetid://270145703"
-		sound.Volume = 10
-		sound.Looped = true
-		local aaaa = Instance.new("DistortionSoundEffect",sound)
-		aaaa.Level = 10
-		local image = Instance.new("ImageLabel",gui)
-		image.Image = "rbxassetid://937691091"
-		image.Size = UDim2.new(0,0,0,0)
-		image.Position = UDim2.new(0.5,0,0.5,0)
-		image.BackgroundTransparency = 0
-		image.ImageColor3 = Color3.new(0,0,0)
-		image.ZIndex = 100
-		local background = Instance.new("Frame",gui)
-		background.Size = UDim2.new(1,0,1,0)
-		background.BackgroundColor3 = Color3.new()
-		for _,v in pairs(game.Players:GetChildren()) do
-			local gui2 = gui:Clone()
-			local intense = 0
-			local intense2 = 10
-			gui2.Parent = v.PlayerGui
-			gui2.Sound:Play()
-			spawn(function()
-				while wait(math.random() / 5) do
-					gui2.Sound.Pitch = (math.random() * intense2) + 1.5
-					gui2.Sound.Volume = intense * 6
-				end
-			end)
-			spawn(function()
-				while wait() do
-					gui2.ImageLabel.ImageColor3 = Color3.fromHSV(math.random(),1,intense * (math.random() / 2))
-					gui2.ImageLabel.Size = UDim2.new(0,intense * 800,0,intense * 800)
-					gui2.ImageLabel.Position = UDim2.new(0.5,intense * -400,0.5,intense * -400)
-				end
-			end)
-			spawn(function()
-				intense = 1
-				wait(0.2)
-				--for i=1,30 do
-				--	wait()
-				--	intense = 1 - (i/30)
-				--end
-				--v:Kick("9840285")
-			end)
-			spawn(function()
-				for i=0,300 do
-					wait()
-					intense2 = 10 - ((i/300) * 5.5)
-				end
-			end)
-			if not y then
-				spawn(function()
-					wait(0.2)
-					gui2:Destroy()
-				end)
-			else
-				game.Debris:AddItem(gui2,20)
-			end
+ServerW:Button('Non fe purple team	',function()
+	local player = game.Players.LocalPlayer
+	print(player.Name)
+	local but = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons["Pur"]:Clone()
+	but.Visible  = true
+	local red = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons.Rd.lock
+	local blu = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons.Blu.lock
+	--but.ImageColor3 = Color3.new(100, 0.7, 0)--Red, Green, Blue.
+	--but.Position = UDim2.new(0, -155, 1, -320)
+	but.Parent = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons
+	but.MouseButton1Click:connect(function()
+		if blu.Visible == true then
+			game.ReplicatedStorage.Events.JoinTeam:FireServer("TRC") 
 		end
-	end
-	e(nil,true)
-end)
+		if red.Visible == true then
+			game.ReplicatedStorage.Events.JoinTeam:FireServer("TBC") 
+		end
+
+		game.Players.LocalPlayer.Status.Team.Value = "TPC"
+
+		game.ReplicatedStorage.Events.JoinTeam:FireServer("TRC")
+		game.ReplicatedStorage.Events.KillMe:FireServer()
+		wait(0.2)
+		game.Players.LocalPlayer.Status.Team.Value = "TPC"
+		game.Players.LocalPlayer.Status.Team.Value = "TPC"
+
+		wait(0.3)
+
+
+		game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Visible = false
+		game.Players.LocalPlayer.PlayerGui.GUI.BottomFrame.Visible = false
+
+
+
+
+
+
+
+	end)
 
 
 ServerW:Button('FE Sunglasses (Bypassed)',function()
