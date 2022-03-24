@@ -372,8 +372,8 @@ CombatW = main:Tab('Combat')
 FEW = main:Tab('Gun Mods')
 Bolts = main:Tab('LocalPlayer')
 VisualsW = main:Tab('Visuals')
-ServerW = main:Tab('Misc/FE/Fun')
-ServerL = main:Tab('Patch Notes')
+ServerW = main:Tab('Fe Stuff')
+ServerL = main:Tab('Update Log')
 MiscW = main:Tab('Credits')
 
 
@@ -2407,8 +2407,7 @@ end)
 
 ServerL:Label('-Added New Loader')
 ServerL:Label('-Added Bypassed Gun Mods')
-ServerL:Label('-Added Bypassed More  Stuff')
-ServerL:Label('-Reverted Back To Dark Hub UI Lib :(')
+ServerL:Label('-Added Bypassed More Stuff')
 ServerL:Label('-Added Better TP To Random')
 _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
@@ -2419,7 +2418,7 @@ _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 MiscW:Button('Click To Copy Discord Invite',function()
 
-	setclipboard("https://discord.gg/smE4Vrucdx")
+	setclipboard("discord.gg/CQz5CQKv89")
 end)
 MiscW:Label('Zenx Hub v7 - Arsenal')
 MiscW:Label('RightShift To Toggle The Gui :D')
