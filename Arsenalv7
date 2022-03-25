@@ -1,5 +1,5 @@
 
-local placeid = 00000
+local placeid = 286090429
 
 
 local ScriptLoader = Instance.new("ScreenGui")
@@ -53,7 +53,7 @@ gamechecktext.BackgroundTransparency = 1
 gamechecktext.Position = UDim2.new(0.266666681, 0, 0.300000012, 0)
 gamechecktext.Size = UDim2.new(0, 189, 0, 50)
 gamechecktext.Font = Enum.Font.SourceSans
-gamechecktext.Text = "Bypassing Anti Cheats"
+gamechecktext.Text = "Checking if nillo is cool"
 gamechecktext.TextColor3 = Color3.new(0, 0, 0)
 gamechecktext.TextSize = 25
 gamechecktext.TextWrapped = true
@@ -66,7 +66,7 @@ loadscripttext.BackgroundTransparency = 1
 loadscripttext.Position = UDim2.new(0.266666681, 0, 0.576666713, 0)
 loadscripttext.Size = UDim2.new(0, 189, 0, 50)
 loadscripttext.Font = Enum.Font.SourceSans
-loadscripttext.Text = "Loading Script..."
+loadscripttext.Text = "Loading Gui..."
 loadscripttext.TextColor3 = Color3.new(0, 0, 0)
 loadscripttext.TextSize = 25
 loadscripttext.TextWrapped = true
@@ -318,7 +318,7 @@ else
 		kruis12.Visible = true
 		puntjes1.Visible = false
 		wait(1)
-		game.Players.LocalPlayer:kick "Wrong game!"
+		game.Players.LocalPlayer:kick "This is not the right game, this gui is meant for Arsenal!"
 		wait(1)
 		ScriptLoader:Destroy()
 	end
@@ -593,7 +593,7 @@ CombatW:Button('Kill All (After you toggle you can use any guns)',function()
 	function sayMessage(option)
 		if game.Players.LocalPlayer.Status.Team.Value ~= "Spectator" then
 			local Message = option
-			game.ReplicatedStorage.Events.PlayerChatted:FireServer("Trolling42", "   Zenx Hub Winning!", false, false, true)
+			game.ReplicatedStorage.Events.PlayerChatted:FireServer("Trolling42", "   Cry about it", false, false, true)
 		end
 	end
 
@@ -1040,7 +1040,7 @@ Bolts:Button('Never Die (Keeps Your Kill Streak)',function()
 	end
 end)
 
-Bolts:Button('Fast Heal v5 Bypassed By Bolts#9999',function()
+Bolts:Button('Fast Heal v5',function()
 	while game.RunService.RenderStepped:Wait()do
 		pcall(function()
 			if game.Players.LocalPlayer.Character then
@@ -1746,9 +1746,51 @@ VisualsW:Colorpicker(
 )
 
 ServerW:Button('Nonfe purple team',function()
-			
+
 	loadstring(game:HttpGet("https://pastebin.com/raw/QwpESx4c",true))();
-		end)
+end)
+
+ServerW:Button('Nonfe orange team',function()
+
+	local player = game.Players.LocalPlayer
+	print(player.Name)
+	local but = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons["Or"]:Clone()
+	but.Visible  = true
+	local red = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons.Rd.lock
+	local blu = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons.Blu.lock
+	--but.ImageColor3 = Color3.new(100, 0.7, 0)--Red, Green, Blue.
+	--but.Position = UDim2.new(0, -155, 1, -320)
+	but.Parent = game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Buttons
+	but.MouseButton1Click:connect(function()
+		if blu.Visible == true then
+			game.ReplicatedStorage.Events.JoinTeam:FireServer("TRC") 
+		end
+		if red.Visible == true then
+			game.ReplicatedStorage.Events.JoinTeam:FireServer("TBC") 
+		end
+
+		game.Players.LocalPlayer.Status.Team.Value = "TOC"
+
+		game.ReplicatedStorage.Events.JoinTeam:FireServer("TRC")
+		game.ReplicatedStorage.Events.KillMe:FireServer()
+		wait(0.2)
+		game.Players.LocalPlayer.Status.Team.Value = "TOC"
+		game.Players.LocalPlayer.Status.Team.Value = "TOC"
+
+		wait(0.3)
+
+
+		game.Players.LocalPlayer.PlayerGui.GUI.TeamSelection.Visible = false
+		game.Players.LocalPlayer.PlayerGui.GUI.BottomFrame.Visible = false
+
+
+
+
+
+
+
+	end)
+end)
 
 ServerW:Button('in game no banana monky (If you wanna use shooker man after you clicked this you have to rejoin)',function()
 
@@ -1819,7 +1861,7 @@ ServerW:Button('Nonfe in game Shooker Man',function()
 
 
 end)
-	
+
 
 
 
@@ -2422,11 +2464,11 @@ end)
 
 Bedwars:Button('Dagger to Bow',function()
 
-		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://6861067722" -- put rbx mesh
-		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://5194138714" -- put rbx texture
-		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
-		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
-	end)
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://6861067722" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://5194138714" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
 
 Bedwars:Button('Dagger to Flamethrower',function()
 
@@ -2436,12 +2478,61 @@ Bedwars:Button('Dagger to Flamethrower',function()
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
 end)
 
+Bedwars:Button('Dagger to Smoke gernade',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7614903958" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7614904121" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+Bedwars:Button('Dagger to banana peel',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7676889293" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7676889429" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 0
+end)
+
+Bedwars:Button('Dagger to Guitar',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7044623945" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7044623987" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 0
+end)
+
+Bedwars:Button('Dagger to Bee net',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://5677449888" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://4857011580" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+Bedwars:Button('Dagger to Beekeeper',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7331824676" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7331838621" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+
+Bedwars:Button('Dagger to large rock',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://6679922018" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://0" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
 Bedwars:Button('Dagger diamond fish',function()
 
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7795085365" -- put rbx mesh
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7795085449" -- put rbx texture
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
-	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 0
 end)
 
 Bedwars:Button('Dagger emerald fish',function()
@@ -2449,7 +2540,7 @@ Bedwars:Button('Dagger emerald fish',function()
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7795084881" -- put rbx mesh
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7795085049" -- put rbx texture
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
-	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 0
 end)
 
 Bedwars:Button('Dagger iron fish',function()
@@ -2457,7 +2548,7 @@ Bedwars:Button('Dagger iron fish',function()
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7795083704" -- put rbx mesh
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7795083805" -- put rbx texture
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
-	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 0
 end)
 
 Bedwars:Button('Dagger special fish',function()
@@ -2465,7 +2556,7 @@ Bedwars:Button('Dagger special fish',function()
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7795084260" -- put rbx mesh
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7795084417" -- put rbx texture
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
-	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 0
 end)
 
 Bedwars:Button('Dagger fishing rod',function()
@@ -2478,11 +2569,11 @@ end)
 
 Bedwars:Button('Dagger to Wooden Pickaxe',function()
 
-		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://4903570273" -- put rbx mesh
-		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://4857011580" -- put rbx texture
-		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
-		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
-	end)
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://4903570273" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://4857011580" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
 
 Bedwars:Button('Dagger to Stone Pickaxe',function()
 
@@ -2535,10 +2626,10 @@ end)
 
 Bedwars:Button('Dagger to Wooden Sword',function()
 
-			game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://6770060739" -- put rbx mesh
-			game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://6770060782" -- put rbx texture
-			game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
-			game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://6770060739" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://6770060782" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
 end)
 
 Bedwars:Button('Dagger to Iron Sword',function()
@@ -2557,16 +2648,46 @@ Bedwars:Button('Dagger To Gorilla melee', function()
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://5390501421" -- put rbx texture
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
 
-	game:GetService("ReplicatedStorage").Viewmodels["v_Whern Day Brekas"].Part.MeshId = "rbxassetid://5390501239" -- put rbx mesh
-	game:GetService("ReplicatedStorage").Viewmodels["v_Whern Day Brekas"].Part.TextureID = "rbxassetid://5390501421" -- put rbx texture
-	game:GetService("ReplicatedStorage").Viewmodels["v_Whern Day Brekas"].Part.Transparency = 0
-	game:GetService("ReplicatedStorage").Viewmodels["v_Whern Day Brekas"].Handle.Transparency = 1
+Bedwars:Button('Dagger to Demon Nillo Crab',function()
 
-	game:GetService("ReplicatedStorage").Viewmodels["v_Night's Edge"].Part.MeshId = "rbxassetid://5390501239" -- put rbx mesh
-	game:GetService("ReplicatedStorage").Viewmodels["v_Night's Edge"].Part.TextureID = "rbxassetid://5390501421" -- put rbx texture
-	game:GetService("ReplicatedStorage").Viewmodels["v_Night's Edge"].Part.Transparency = 0
-	game:GetService("ReplicatedStorage").Viewmodels["v_Night's Edge"].Handle.Transparency = 1
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7224871838" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://8559409752" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+Bedwars:Button('Dagger to Grey Nillo Crab',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7224871838" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://5390501421" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+Bedwars:Button('Dagger to Come Nillo Crab',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7224871838" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7120380172	" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+Bedwars:Button('Dagger to flushed emoji',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7120458071" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7120380172" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
+Bedwars:Button('Dagger to lolcat head',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7117317840" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7120733513" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
 end)
 
 
@@ -2586,4 +2707,4 @@ end)
 MiscW:Label('Ktemp#8971 - Owner')
 MiscW:Label('Nillo - Developer')
 MiscW:Label('RightShift To Toggle The Gui :D')
-	MiscW:Label('Dark Hub Devs For UI Lib')
+MiscW:Label('Dark Hub Devs For UI Lib')
