@@ -2428,6 +2428,14 @@ Bedwars:Button('Dagger to Bow',function()
 		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
 	end)
 
+Bedwars:Button('Dagger to Flamethrower',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7279044968" -- put rbx mesh
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://7277434117" -- put rbx texture
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+end)
+
 Bedwars:Button('Dagger diamond fish',function()
 
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://7795085365" -- put rbx mesh
