@@ -2354,11 +2354,19 @@ Bedwars:Button('Dagger to Bow',function()
 		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://5194138714" -- put rbx texture
 		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
 		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
-end)
+	end)
 
-Bedwars:Button('Dagger to Wooden Pickaxe',function()
+	Bedwars:Button('Dagger to Wooden Pickaxe',function()
 
-	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://4903570273" -- put rbx mesh
+		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://4903570273" -- put rbx mesh
+		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://4857011580" -- put rbx texture
+		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
+		game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
+	end)
+
+Bedwars:Button('Dagger to Stone Pickaxe',function()
+
+	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.MeshId = "rbxassetid://4903579607" -- put rbx mesh
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.TextureID = "rbxassetid://4857011580" -- put rbx texture
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Part.Transparency = 0
 	game:GetService("ReplicatedStorage").Viewmodels["v_Dagger"].Handle.Transparency = 1
