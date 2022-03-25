@@ -1750,6 +1750,78 @@ ServerW:Button('Nonfe purple team',function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/QwpESx4c",true))();
 		end)
 
+ServerW:Button('Nonfe in game no banana monky (If you wanna use shooker man after you clicked this you have to rejoin)',function()
+
+	game.Players.LocalPlayer.Character.NerdHair:Destroy()
+	game.Players.LocalPlayer.Character.FakeHead.Mesh.MeshId = "http://www.roblox.com/asset/?id=13636429"
+	game.Players.LocalPlayer.Character.FakeHead.Mesh.TextureId = "http://www.roblox.com/asset/?id=13636445"
+	game.Players.LocalPlayer.Character.Cap.Handle.Mesh.MeshId = "http://www.roblox.com/asset/?id="
+	game.Players.LocalPlayer.Character.Cap.Handle.Mesh.Scale=Vector3.new(4.3, 4.3, 4.3)
+	game.Players.LocalPlayer.Character.FakeHead.Mesh.Scale=Vector3.new(1.25, 1.25, 1.25)
+	game.Players.LocalPlayer.Character.FakeHead.face:Destroy()
+	game.Players.LocalPlayer.Character.Pants.PantsTemplate = "rbxassetid://1983315399"
+	game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "http://www.roblox.com/asset/?id=2177773400"
+
+	game.Players.LocalPlayer.Ragdoll.NerdHair:Destroy()
+	game.Players.LocalPlayer.Ragdoll.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=13636429"
+	game.Players.LocalPlayer.Ragdoll.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=13636445"
+	game.Players.LocalPlayer.Ragdoll.Cap.Handle.Mesh.MeshId = "http://www.roblox.com/asset/?id="
+	game.Players.LocalPlayer.Ragdoll.Cap.Handle.Mesh.Scale=Vector3.new(4.3, 4.3, 4.3)
+	game.Players.LocalPlayer.Ragdoll.Head.Mesh.Scale=Vector3.new(1.25, 1.25, 1.25)
+	game.Players.LocalPlayer.Ragdoll.Head.face:Destroy()
+	game.Players.LocalPlayer.Ragdoll.Pants.PantsTemplate = "rbxassetid://1983315399"
+	game.Players.LocalPlayer.Ragdoll.Shirt.ShirtTemplate = "http://www.roblox.com/asset/?id=2177773400"
+	game.Players.LocalPlayer.Ragdoll.Head.Mesh.OriginalSize:Destroy()
+	game.Players.LocalPlayer.Ragdoll.Cap.Handle.OriginalSize:Destroy()
+
+	game.Players.LocalPlayer.Character.RightUpperArm.BrickColor = BrickColor.new("Reddish brown")
+	game.Players.LocalPlayer.Character.RightLowerArm.BrickColor = BrickColor.new("Reddish brown")
+	game.Players.LocalPlayer.Character.RightHand.BrickColor = BrickColor.new("Reddish brown")
+	game.Players.LocalPlayer.Character.LeftUpperArm.BrickColor = BrickColor.new("Reddish brown")
+	game.Players.LocalPlayer.Character.LeftLowerArm.BrickColor = BrickColor.new("Reddish brown")
+	game.Players.LocalPlayer.Character.LeftHand.BrickColor = BrickColor.new("Reddish brown")
+
+
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.NerdHair:Destroy()
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Head.Mesh.MeshId = "http://www.roblox.com/asset/?id=13636429"
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Head.Mesh.TextureId = "http://www.roblox.com/asset/?id=13636445"
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Cap.Handle.Mesh.MeshId = "http://www.roblox.com/asset/?id="
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Cap.Handle.Mesh.Scale=Vector3.new(4.3, 4.3, 4.3)
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Head.Mesh.Scale=Vector3.new(1.25, 1.25, 1.25)
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Head.Mesh.OriginalSize:Destroy()
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Cap.Handle.OriginalSize:Destroy()
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Head.face:Destroy()
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Pants.PantsTemplate = "rbxassetid://1983315399"
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Shirt.ShirtTemplate = "http://www.roblox.com/asset/?id=2177773400"
+
+
+end)
+
+ServerW:Button('Nonfe in game no banana monky (If you wanna use monky with no banana after you clicked this you have to rejoin)',function()
+
+	game.Players.LocalPlayer.Character.Shirt.ShirtTemplate = "http://www.roblox.com/asset/?id=6252578238"
+	game.Players.LocalPlayer.Character.Pants.PantsTemplate = "rbxassetid://6252577756"
+	game.Players.LocalPlayer.Character.FakeHead.face.Texture = "http://www.roblox.com/asset/?id=4272895036"
+	game.Players.LocalPlayer.Character.NerdHair.Handle.Mesh.TextureId = "http://www.roblox.com/asset/?id=15730704"
+	game.Players.LocalPlayer.Character.Cap:Destroy()
+
+
+	game.Players.LocalPlayer.Ragdoll.Shirt.ShirtTemplate = "http://www.roblox.com/asset/?id=6252578238"
+	game.Players.LocalPlayer.Ragdoll.Pants.PantsTemplate = "rbxassetid://6252577756"
+	game.Players.LocalPlayer.Ragdoll.Head.face.Texture = "http://www.roblox.com/asset/?id=4272895036"
+	game.Players.LocalPlayer.Ragdoll.Cap:Destroy()
+
+
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Shirt.ShirtTemplate = "http://www.roblox.com/asset/?id=6252578238"
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Pants.PantsTemplate = "rbxassetid://6252577756"
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Head.face.Texture = "http://www.roblox.com/asset/?id=4272895036"
+	game.ReplicatedStorage.StreamedAssets.ChrModels.Delinquent.Cap:Destroy()
+
+
+end)
+	
+
+
 
 ServerW:Button('FE Sunglasses (Bypassed)',function()
 	while true do wait(0.1) game:GetService("ReplicatedStorage").Events.Sunglasses:FireServer() end
