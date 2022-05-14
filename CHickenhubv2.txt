@@ -1,5 +1,0 @@
--- without the original creator credits weuz_ and mrdevl
-loadstring(game:HttpGet("https://raw.githubusercontent.com/timcheno3o/chicken-hub-parody-/main/Chickenhub.txt", true))() 
-
---with the original creator credits
-loadstring(game:HttpGet("https://raw.githubusercontent.com/timcheno3o/chicken-hub-parody-/main/Chickenhubparody"))()
