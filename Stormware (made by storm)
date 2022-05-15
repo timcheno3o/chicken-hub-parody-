@@ -27,34 +27,36 @@ local lowertorso = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local random = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
-local Home = Instance.new("TextButton")
+local Smoothlock = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local Combat = Instance.new("TextButton")
+local Home = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
-local Player = Instance.new("TextButton")
+local Combat = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local PlayerFrame = Instance.new("Frame")
+local Player = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
+local PlayerFrame = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
 local Gravity = Instance.new("TextBox")
-local UICorner_15 = Instance.new("UICorner")
-local upd = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
-local Nonexisty = Instance.new("TextButton")
+local upd = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-local teleport = Instance.new("TextBox")
+local Nonexisty = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
-local tel = Instance.new("TextButton")
+local teleport = Instance.new("TextBox")
 local UICorner_19 = Instance.new("UICorner")
-local Walkspeed = Instance.new("TextButton")
+local tel = Instance.new("TextButton")
 local UICorner_20 = Instance.new("UICorner")
-local Visuals = Instance.new("TextButton")
+local Walkspeed = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
-local VisualFrame = Instance.new("Frame")
+local Visuals = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
+local VisualFrame = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
 local box = Instance.new("TextButton")
-local UICorner_23 = Instance.new("UICorner")
+local UICorner_24 = Instance.new("UICorner")
 
 --Properties:
 
@@ -226,6 +228,20 @@ random.TextWrapped = true
 
 UICorner_10.Parent = random
 
+Smoothlock.Name = "Smoothlock"
+Smoothlock.Parent = CombatFrame
+Smoothlock.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Smoothlock.Position = UDim2.new(0.713362098, 0, 0.476394862, 0)
+Smoothlock.Size = UDim2.new(0, 84, 0, 40)
+Smoothlock.Font = Enum.Font.Nunito
+Smoothlock.Text = "Smoothlock (press c to toggle)"
+Smoothlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Smoothlock.TextScaled = true
+Smoothlock.TextSize = 14.000
+Smoothlock.TextWrapped = true
+
+UICorner_11.Parent = Smoothlock
+
 Home.Name = "Home"
 Home.Parent = ware
 Home.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
@@ -237,8 +253,8 @@ Home.Text = "Home"
 Home.TextColor3 = Color3.fromRGB(255, 255, 255)
 Home.TextSize = 22.000
 
-UICorner_11.CornerRadius = UDim.new(0, 12)
-UICorner_11.Parent = Home
+UICorner_12.CornerRadius = UDim.new(0, 12)
+UICorner_12.Parent = Home
 
 Combat.Name = "Combat"
 Combat.Parent = ware
@@ -251,8 +267,8 @@ Combat.Text = "Combat"
 Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
 Combat.TextSize = 22.000
 
-UICorner_12.CornerRadius = UDim.new(0, 12)
-UICorner_12.Parent = Combat
+UICorner_13.CornerRadius = UDim.new(0, 12)
+UICorner_13.Parent = Combat
 
 Player.Name = "Player"
 Player.Parent = ware
@@ -265,8 +281,8 @@ Player.Text = "Player/FE"
 Player.TextColor3 = Color3.fromRGB(255, 255, 255)
 Player.TextSize = 22.000
 
-UICorner_13.CornerRadius = UDim.new(0, 12)
-UICorner_13.Parent = Player
+UICorner_14.CornerRadius = UDim.new(0, 12)
+UICorner_14.Parent = Player
 
 PlayerFrame.Name = "PlayerFrame"
 PlayerFrame.Parent = ware
@@ -275,8 +291,8 @@ PlayerFrame.Position = UDim2.new(0.201954395, 0, 0.195718661, 0)
 PlayerFrame.Size = UDim2.new(0, 464, 0, 233)
 PlayerFrame.Visible = false
 
-UICorner_14.CornerRadius = UDim.new(0, 34)
-UICorner_14.Parent = PlayerFrame
+UICorner_15.CornerRadius = UDim.new(0, 34)
+UICorner_15.Parent = PlayerFrame
 
 TextLabel_3.Parent = PlayerFrame
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -303,7 +319,7 @@ Gravity.TextScaled = true
 Gravity.TextSize = 24.000
 Gravity.TextWrapped = true
 
-UICorner_15.Parent = Gravity
+UICorner_16.Parent = Gravity
 
 upd.Name = "upd"
 upd.Parent = PlayerFrame
@@ -317,7 +333,7 @@ upd.TextScaled = true
 upd.TextSize = 14.000
 upd.TextWrapped = true
 
-UICorner_16.Parent = upd
+UICorner_17.Parent = upd
 
 Nonexisty.Name = "Nonexisty"
 Nonexisty.Parent = PlayerFrame
@@ -331,7 +347,7 @@ Nonexisty.TextScaled = true
 Nonexisty.TextSize = 14.000
 Nonexisty.TextWrapped = true
 
-UICorner_17.Parent = Nonexisty
+UICorner_18.Parent = Nonexisty
 
 teleport.Name = "teleport"
 teleport.Parent = PlayerFrame
@@ -346,7 +362,7 @@ teleport.TextScaled = true
 teleport.TextSize = 14.000
 teleport.TextWrapped = true
 
-UICorner_18.Parent = teleport
+UICorner_19.Parent = teleport
 
 tel.Name = "tel"
 tel.Parent = PlayerFrame
@@ -360,7 +376,7 @@ tel.TextScaled = true
 tel.TextSize = 14.000
 tel.TextWrapped = true
 
-UICorner_19.Parent = tel
+UICorner_20.Parent = tel
 
 Walkspeed.Name = "Walkspeed"
 Walkspeed.Parent = PlayerFrame
@@ -374,7 +390,7 @@ Walkspeed.TextScaled = true
 Walkspeed.TextSize = 14.000
 Walkspeed.TextWrapped = true
 
-UICorner_20.Parent = Walkspeed
+UICorner_21.Parent = Walkspeed
 
 Visuals.Name = "Visuals"
 Visuals.Parent = ware
@@ -387,8 +403,8 @@ Visuals.Text = "Visuals"
 Visuals.TextColor3 = Color3.fromRGB(255, 255, 255)
 Visuals.TextSize = 22.000
 
-UICorner_21.CornerRadius = UDim.new(0, 12)
-UICorner_21.Parent = Visuals
+UICorner_22.CornerRadius = UDim.new(0, 12)
+UICorner_22.Parent = Visuals
 
 VisualFrame.Name = "VisualFrame"
 VisualFrame.Parent = ware
@@ -397,8 +413,8 @@ VisualFrame.Position = UDim2.new(0.201954395, 0, 0.195718661, 0)
 VisualFrame.Size = UDim2.new(0, 464, 0, 233)
 VisualFrame.Visible = false
 
-UICorner_22.CornerRadius = UDim.new(0, 34)
-UICorner_22.Parent = VisualFrame
+UICorner_23.CornerRadius = UDim.new(0, 34)
+UICorner_23.Parent = VisualFrame
 
 TextLabel_4.Parent = VisualFrame
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -424,11 +440,11 @@ box.TextScaled = true
 box.TextSize = 14.000
 box.TextWrapped = true
 
-UICorner_23.Parent = box
+UICorner_24.Parent = box
 
 -- Scripts:
 
-local function OAQNLDA_fake_script() -- Home.LocalScript 
+local function VWPWUJ_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -438,8 +454,8 @@ local function OAQNLDA_fake_script() -- Home.LocalScript
 		script.Parent.Parent.HomeFrame.Visible = true
 	end)
 end
-coroutine.wrap(OAQNLDA_fake_script)()
-local function GHROBO_fake_script() -- Combat.LocalScript 
+coroutine.wrap(VWPWUJ_fake_script)()
+local function PINVSKX_fake_script() -- Combat.LocalScript 
 	local script = Instance.new('LocalScript', Combat)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -449,8 +465,8 @@ local function GHROBO_fake_script() -- Combat.LocalScript
 		script.Parent.Parent.HomeFrame.Visible = false
 	end)
 end
-coroutine.wrap(GHROBO_fake_script)()
-local function UJFZOQY_fake_script() -- Player.LocalScript 
+coroutine.wrap(PINVSKX_fake_script)()
+local function SHGGG_fake_script() -- Player.LocalScript 
 	local script = Instance.new('LocalScript', Player)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -460,8 +476,8 @@ local function UJFZOQY_fake_script() -- Player.LocalScript
 		script.Parent.Parent.HomeFrame.Visible = false
 	end)
 end
-coroutine.wrap(UJFZOQY_fake_script)()
-local function QVIUWS_fake_script() -- Visuals.LocalScript 
+coroutine.wrap(SHGGG_fake_script)()
+local function PQRI_fake_script() -- Visuals.LocalScript 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -472,8 +488,8 @@ local function QVIUWS_fake_script() -- Visuals.LocalScript
 		script.Parent.Parent.VisualFrame.Visible = true
 	end)
 end
-coroutine.wrap(QVIUWS_fake_script)()
-local function APEUXI_fake_script() -- StormWareX.Core 
+coroutine.wrap(PQRI_fake_script)()
+local function CHZXB_fake_script() -- StormWareX.Core 
 	local script = Instance.new('LocalScript', StormWareX)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -735,7 +751,142 @@ local function APEUXI_fake_script() -- StormWareX.Core
 	end)
 	
 	
+	script.Parent.ware.CombatFrame.Smoothlock.MouseButton1Click:Connect(function()
+		bodyPart = 'Head'
 	
+		on = false
+	
+		local lp = game:GetService('Players').LocalPlayer
+		local char = lp.Character
+	
+	
+		local mouse = lp:GetMouse()
+	
+	
+		game:GetService("UserInputService").InputBegan:connect(function(inputObject)
+			if inputObject.KeyCode == Enum.KeyCode.C then
+				on = not on
+			end
+		end)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	--[[local function isObstructed(part)
+	   local hrp = char.HumanoidRootPart
+	   local PointA_Position = hrp.Position
+	   local PointB_Position = part.Position
+	
+	   local Direction = (PointB_Position - PointA_Position).Unit
+	   local Raycast = Ray.new(PointA_Position, Direction * 100)
+	   local Hit = workspace:FindPartOnRay(Raycast, char)
+	   if Hit == part then
+	       return true
+	   else
+	       return false
+	   end
+	end
+	]]
+	
+		function cansee(targ)
+			local cam = workspace.CurrentCamera
+			local ray = Ray.new(lp.Character.Head.CFrame.p, (targ.CFrame.p - lp.Character.Head.CFrame.p).unit * 300)
+			local part, position = workspace:FindPartOnRayWithIgnoreList(ray, {lp.Character}, false, true)
+			if part then
+				local humanoid = part.Parent:FindFirstChildOfClass("Humanoid")
+	
+				if not humanoid then
+					humanoid = part.Parent.Parent:FindFirstChildOfClass("Humanoid")
+				end
+	
+				if humanoid and targ and humanoid.Parent == targ.Parent then
+					local blah,actualthing = cam:WorldToScreenPoint(targ.Position)
+					if actualthing == true then
+						return true
+					else
+						return false
+					end
+				else
+					return false
+				end
+			else
+				return false
+			end
+		end
+	
+	
+	
+	
+		local function getClosestPlayerToCursor(x, y)
+			local closestPlayer = nil
+			local shortestDistance = math.huge
+	
+			for i, v in pairs(game:GetService("Players"):GetPlayers()) do
+				if v ~= lp and v.Character and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health ~= 0 and v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("Head") then
+					local pos = game:GetService("Workspace").CurrentCamera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+					local magnitude = (Vector2.new(pos.X, pos.Y) - Vector2.new(x, y)).magnitude
+	
+					local targettable = (v.Team ~= lp.Team or v.Team == nil) and v.Character.Humanoid.Health > 0
+					if magnitude < shortestDistance and cansee(v.Character.Head) == true and (v.Team ~= lp.Team or v.Team == nil) and v.Character.Humanoid.Health > 0 then
+						closestPlayer = v
+						shortestDistance = magnitude
+					end
+				end
+			end
+			return closestPlayer, shortestDistance
+		end
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		TweenStatus = nil
+	
+		local TweenService = game:GetService("TweenService")
+		TweenCFrame = Instance.new("CFrameValue")
+	
+	
+		function tweenstuff(partpos)
+			TweenStatus = true
+			TweenCFrame.Value = workspace.CurrentCamera.CFrame
+			local tweenframe = TweenService:Create(TweenCFrame, TweenInfo.new(0.2),{Value = CFrame.new(workspace.CurrentCamera.CFrame.Position, partpos)})
+			tweenframe:Play()
+			tweenframe.Completed:Wait()
+			TweenStatus = nil
+			TweenCFrame.Value = CFrame.new(0,0,0)
+		end
+	
+	
+	
+	
+		game:GetService('RunService').Heartbeat:connect(function()
+			if on == true then
+				local plr, distance = getClosestPlayerToCursor(mouse.X, mouse.Y)
+				if TweenStatus == nil and plr ~= nil and distance > 150 then
+					tweenstuff(plr.Character.Head.Position)
+				end
+				if TweenStatus == true then
+					workspace.CurrentCamera.CFrame = TweenCFrame.Value
+				end
+				if plr ~= nil and distance < 150 and TweenStatus == nil then
+					workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position, plr.Character.Head.Position)
+				end
+			end
+		end)
+	end)
 	
 	script.Parent.ware.CombatFrame.lowertorso.MouseButton1Click:Connect(function()
 		local CurrentCamera = workspace.CurrentCamera
@@ -1033,4 +1184,4 @@ local function APEUXI_fake_script() -- StormWareX.Core
 	end
 	game:GetService("UserInputService").InputBegan:connect(onKeyPress)
 end
-coroutine.wrap(APEUXI_fake_script)()
+coroutine.wrap(CHZXB_fake_script)()
