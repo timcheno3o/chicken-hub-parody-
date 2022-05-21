@@ -1,3 +1,4 @@
+if game.PlaceId == 1224212277 then
 print("Loaded")
 	wait()
 	print("For help join https://discord.gg/Nz8hFAgZFr")
@@ -1440,3 +1441,7 @@ elseif game.PlaceId == 155615604 then
 			end
 			coroutine.wrap(traces)()
 		end)
+	end)	
+else
+	game.Players.LocalPlayer:Kick("This game is not supported.")
+end
