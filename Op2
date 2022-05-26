@@ -1863,6 +1863,15 @@ FE:Button('Join Hacker Only Lobby (Ar Sub V3)',function()
 		game:GetService('TeleportService'):Teleport(9129340911)
 	end
 end)
+
+FE:Button('Spoof device to console',function()
+game.ReplicatedStorage.Events.CoolNewRemote:FireServer("Gamepad1")
+end)
+
+FE:Button('Spoof device to mobile',function()
+game.ReplicatedStorage.Events.CoolNewRemote:FireServer("Touch")
+end)
+
 FE:Button('FE KillBrick',function()
 
 	local Core = getsenv(game.Players.LocalPlayer.PlayerGui.Menew.LocalScript);
