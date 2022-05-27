@@ -395,7 +395,7 @@ end
 
 
 Combat:Button('Aimlock',function()
-	ocal dwCamera = workspace.CurrentCamera
+	local dwCamera = workspace.CurrentCamera
 		local dwRunService = game:GetService("RunService")
 		local dwUIS = game:GetService("UserInputService")
 		local dwEntities = game:GetService("Players")
