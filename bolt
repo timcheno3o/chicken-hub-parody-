@@ -5645,9 +5645,12 @@ require(game.ReplicatedStorage.Modules.Spread).calcspread=function(a,...)
     return ArsoniaTable.Variables.Functions.CalculateSpread(a,...)
 end
 
+wait(2)
 
+game.Players.LocalPlayer:Kick("Stop trying to bypass anticheat stinky exploiter :( (Bolts Hub detected)")
 
 --Fixes
 ArsoniaTable.Variables.Levels.StartBar=ArsoniaTable.Variables.Levels_OLD.StartBar
 ArsoniaTable.Variables.Levels.EndBar=ArsoniaTable.Variables.Levels_OLD.EndBar
+
 
