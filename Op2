@@ -3081,6 +3081,4 @@ while true do wait(0.1)
 	Message("Zenx V v7")
 end
 
-wait(30)
 
-game.Players.LocalPlayer:Kick("Stop trying to bypass anticheat stinky exploiter :( (Bolts Hub detected) ")
