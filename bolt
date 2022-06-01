@@ -1,10 +1,4 @@
-print("Authenticating...")
-wait(4)
-print("Authorized!")
-
-wait(1)
-
-game.Players.LocalPlayer:Kick("Stop trying to bypass anticheat stinky exploiter :( (Bolts Hub detected)")
+-- bolts ware
 local Library=loadstring(game:HttpGet("https://pastebin.com/raw/bfSMHFwJ"))()
 Client = {
     Modules = {
@@ -5656,5 +5650,4 @@ end
 --Fixes
 ArsoniaTable.Variables.Levels.StartBar=ArsoniaTable.Variables.Levels_OLD.StartBar
 ArsoniaTable.Variables.Levels.EndBar=ArsoniaTable.Variables.Levels_OLD.EndBar
-
 
