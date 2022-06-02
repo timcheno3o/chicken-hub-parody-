@@ -1,3 +1,4 @@
+
 local Library=loadstring(game:HttpGet("https://pastebin.com/raw/bfSMHFwJ"))()
 Client = {
     Modules = {
@@ -874,6 +875,10 @@ end)]]
 
 
 
+
+
+local CombatTabGunmodsSection=CombatTab:Section("Gunmods")
+
 CombatTabGunmodsSection:Button("Best Gun mods",function()
     for i,v in next, game.ReplicatedStorage.Weapons:GetChildren() do
 		for i,c in next, v:GetChildren() do -- for some reason, using GetDescendants dsent let you modify weapon ammo, so I do this instead
@@ -897,8 +902,8 @@ CombatTabGunmodsSection:Button("Best Gun mods",function()
 		game:GetService("Players").LocalPlayer.PlayerGui.GUI.Client.Variables.ammocount.Value = 999 -- dont do it higher then 999
 		game:GetService("Players").LocalPlayer.PlayerGui.GUI.Client.Variables.ammocount2.Value = 999
 	end)
+end)
 
-local CombatTabGunmodsSection=CombatTab:Section("Gunmods")
 CombatTabGunmodsSection:Toggle("Enabled",function(x)
     ArsoniaTable.Combat.Gunmods.Enabled=x
     if x then
@@ -2416,6 +2421,9 @@ end)
 MiscTabMainSection:Toggle("Chat Spam",function(state)
     Client.Toggles.SpamChat = state
 end)
+
+
+
 spawn(function()
     while true do
         wait(.01)
@@ -2603,6 +2611,55 @@ end)
 local MiscTabTrollingSection=MiscTab:Section("Trolling")
 MiscTabTrollingSection:Toggle("Enabled",function(x)
     ArsoniaTable.Misc.Trolling.Enabled=x
+end)
+
+MiscTabTrollingSection:Button("skirt to brick",function()
+    game.Players.LocalPlayer.Character.Skirt.Handle.Mesh:Destroy()
+end)
+
+MiscTabTrollingSection:Button("Fe brick (animatronic performer)",function()
+      game.Players.LocalPlayer.Character.LHAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.LLAAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.LLLAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.LFAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.LUAAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.LULAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.RFAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.RHAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.RLAAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.RLLAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.RUAAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.RULAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.UTAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.LTAccessory.Handle:Destroy()
+game.Players.LocalPlayer.Character.EyeSockets.Handle:Destroy()
+game.Players.LocalPlayer.Character.Markings.Handle:Destroy()
+game.Players.LocalPlayer.Character.NeonEyes.Handle:Destroy()
+game.Players.LocalPlayer.Character.Performer.Handle:Destroy()
+game.Players.LocalPlayer.Character.WireMesh.Handle:Destroy()
+game.Players.LocalPlayer.Character.Hair.Handle:Destroy()
+game.Players.LocalPlayer.Character.Skirt.Handle.Mesh:Destroy()
+game.Players.LocalPlayer.Character["Mime Hat"].Handle:Destroy()
+game.Players.LocalPlayer.Data.Skin.Value = "Nonexisty"
+
+
+game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
+game.Players.LocalPlayer.Character.LeftUpperArm:Destroy()
+game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
+game.Players.LocalPlayer.Character.RightUpperArm:Destroy()
+game.Players.LocalPlayer.Character.LeftFoot:Destroy()
+game.Players.LocalPlayer.Character.LeftLowerLeg:Destroy()
+game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
+game.Players.LocalPlayer.Character.RightFoot:Destroy()
+game.Players.LocalPlayer.Character.RightLowerLeg:Destroy()
+game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
+game.Players.LocalPlayer.Character.FakeHead:Destroy()
+local esc = game.Players.LocalPlayer.Character.UpperTorso:GetChildren()
+for i, v in pairs(esc) do
+    v:Destroy()
+    wait()
+end
+
 end)
 
 MiscTabTrollingSection:Button("FE Sunglasses Bypassed",function()
@@ -5480,6 +5537,7 @@ coroutine.wrap(function()
     end
 end)()
 
+local ping = 32 spawn(function()while wait(1)do ping = math.random(40, 60)end end)spawn(function()game:GetService("RunService").RenderStepped:connect(function()game.Players.LocalPlayer.Ping.Value = ping end)end)while wait() do game.ReplicatedStorage.Events.UpdatePing:FireServer(2000)end
 
 
 --Function Hooks
@@ -5572,6 +5630,4 @@ end
 --Fixes
 ArsoniaTable.Variables.Levels.StartBar=ArsoniaTable.Variables.Levels_OLD.StartBar
 ArsoniaTable.Variables.Levels.EndBar=ArsoniaTable.Variables.Levels_OLD.EndBar
-TextLabel.Visible = false
 
-local ping = 32 spawn(function()while wait(1)do ping = math.random(40, 60)end end)spawn(function()game:GetService("RunService").RenderStepped:connect(function()game.Players.LocalPlayer.Ping.Value = ping end)end)while wait() do game.ReplicatedStorage.Events.UpdatePing:FireServer(2000)end
