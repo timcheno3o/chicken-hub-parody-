@@ -1,0 +1,397 @@
+-- detector x
+local executor = Instance.new("ScreenGui")
+local Actual = Instance.new("Frame")
+local Tab = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local destroy = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Bolts = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Loomian = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Floppa = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Nuker = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Vape = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local future = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Main = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local aa = Instance.new("TextLabel")
+local Credits = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local aa_2 = Instance.new("TextLabel")
+local aa_3 = Instance.new("TextLabel")
+local aa_4 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local Scriptbutton = Instance.new("TextButton")
+local MainButton = Instance.new("TextButton")
+local Creditbutton = Instance.new("TextButton")
+
+--Properties:
+
+executor.Name = "executor"
+executor.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+executor.DisplayOrder = 999999999
+executor.ResetOnSpawn = false
+
+Actual.Name = "Actual"
+Actual.Parent = executor
+Actual.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Actual.BackgroundTransparency = 1.000
+Actual.Position = UDim2.new(0.198782459, 0, 0.318095684, 0)
+Actual.Size = UDim2.new(0, 685, 0, 314)
+Actual.Active = true
+Actual.Draggable = true
+
+Tab.Name = "Tab"
+Tab.Parent = Actual
+Tab.AnchorPoint = Vector2.new(0.5, 0.5)
+Tab.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Tab.Position = UDim2.new(0, 342, 0, 156)
+Tab.Size = UDim2.new(0, 685, 0, 315)
+Tab.Visible = false
+
+UICorner.Parent = Tab
+
+destroy.Name = "destroy"
+destroy.Parent = Tab
+destroy.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+destroy.Position = UDim2.new(0.030829994, 0, 0.254555166, 0)
+destroy.Size = UDim2.new(0, 151, 0, 58)
+destroy.Font = Enum.Font.SourceSans
+destroy.Text = "Destroy gui"
+destroy.TextColor3 = Color3.fromRGB(255, 255, 255)
+destroy.TextSize = 22.000
+destroy.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_2.Parent = destroy
+
+Bolts.Name = "Bolts"
+Bolts.Parent = Tab
+Bolts.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Bolts.Position = UDim2.new(0.272252023, 0, 0.254555166, 0)
+Bolts.Size = UDim2.new(0, 151, 0, 58)
+Bolts.Font = Enum.Font.SourceSans
+Bolts.Text = "Bolts Ware"
+Bolts.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bolts.TextSize = 22.000
+Bolts.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_3.Parent = Bolts
+
+Loomian.Name = "Loomian"
+Loomian.Parent = Tab
+Loomian.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Loomian.Position = UDim2.new(0.511085689, 0, 0.254555166, 0)
+Loomian.Size = UDim2.new(0, 151, 0, 58)
+Loomian.Font = Enum.Font.SourceSans
+Loomian.Text = "Loomian Lgeacy"
+Loomian.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loomian.TextSize = 22.000
+Loomian.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_4.Parent = Loomian
+
+Floppa.Name = "Floppa"
+Floppa.Parent = Tab
+Floppa.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Floppa.Position = UDim2.new(0.0302894767, 0, 0.520085633, 0)
+Floppa.Size = UDim2.new(0, 151, 0, 58)
+Floppa.Font = Enum.Font.SourceSans
+Floppa.Text = "Raise a floppa"
+Floppa.TextColor3 = Color3.fromRGB(255, 255, 255)
+Floppa.TextSize = 22.000
+Floppa.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_5.Parent = Floppa
+
+Nuker.Name = "Nuker"
+Nuker.Parent = Tab
+Nuker.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Nuker.Position = UDim2.new(0.271972567, 0, 0.520085633, 0)
+Nuker.Size = UDim2.new(0, 151, 0, 58)
+Nuker.Font = Enum.Font.SourceSans
+Nuker.Text = "Nuker giant survival"
+Nuker.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nuker.TextSize = 22.000
+Nuker.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_6.Parent = Nuker
+
+Vape.Name = "Vape"
+Vape.Parent = Tab
+Vape.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Vape.Position = UDim2.new(0.511085689, 0, 0.518047214, 0)
+Vape.Size = UDim2.new(0, 151, 0, 58)
+Vape.Font = Enum.Font.SourceSans
+Vape.Text = "Vape bedwars"
+Vape.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vape.TextSize = 22.000
+Vape.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_7.Parent = Vape
+
+future.Name = "future"
+future.Parent = Tab
+future.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+future.Position = UDim2.new(0.749899566, 0, 0.254555166, 0)
+future.Size = UDim2.new(0, 151, 0, 58)
+future.Font = Enum.Font.SourceSans
+future.Text = "Future bedwars"
+future.TextColor3 = Color3.fromRGB(255, 255, 255)
+future.TextSize = 22.000
+future.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_8.Parent = future
+
+Main.Name = "Main"
+Main.Parent = Actual
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Main.Position = UDim2.new(0, 342, 0, 156)
+Main.Size = UDim2.new(0, 685, 0, 315)
+
+UICorner_9.Parent = Main
+
+aa.Name = "aa"
+aa.Parent = Main
+aa.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aa.BackgroundTransparency = 1.000
+aa.Position = UDim2.new(0, 11, 0, 113)
+aa.Size = UDim2.new(0, 662, 0, 88)
+aa.Font = Enum.Font.Gotham
+aa.Text = "Executor: "..identifyexecutor()..""
+aa.TextColor3 = Color3.fromRGB(255, 255, 255)
+aa.TextScaled = true
+aa.TextSize = 14.000
+aa.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Actual
+Credits.AnchorPoint = Vector2.new(0.5, 0.5)
+Credits.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Credits.Position = UDim2.new(0, 342, 0, 156)
+Credits.Size = UDim2.new(0, 685, 0, 315)
+Credits.Visible = false
+
+UICorner_10.Parent = Credits
+
+aa_2.Name = "aa"
+aa_2.Parent = Credits
+aa_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aa_2.BackgroundTransparency = 1.000
+aa_2.Position = UDim2.new(0, 88, 0, 92)
+aa_2.Size = UDim2.new(0, 509, 0, 70)
+aa_2.Font = Enum.Font.Gotham
+aa_2.Text = "Owner: Ktemp#8971"
+aa_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+aa_2.TextScaled = true
+aa_2.TextSize = 14.000
+aa_2.TextWrapped = true
+
+aa_3.Name = "aa"
+aa_3.Parent = Credits
+aa_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aa_3.BackgroundTransparency = 1.000
+aa_3.Position = UDim2.new(0, 61, 0, 153)
+aa_3.Size = UDim2.new(0, 563, 0, 70)
+aa_3.Font = Enum.Font.Gotham
+aa_3.Text = "Bolts ware made by Bolts#0027"
+aa_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+aa_3.TextScaled = true
+aa_3.TextSize = 14.000
+aa_3.TextWrapped = true
+
+aa_4.Name = "aa"
+aa_4.Parent = Actual
+aa_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aa_4.BackgroundTransparency = 1.000
+aa_4.Position = UDim2.new(0, 171, 0, 4)
+aa_4.Size = UDim2.new(0, 373, 0, 49)
+aa_4.Font = Enum.Font.Gotham
+aa_4.Text = "Detector X v3"
+aa_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+aa_4.TextScaled = true
+aa_4.TextSize = 14.000
+aa_4.TextWrapped = true
+
+ImageLabel.Parent = Actual
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0, -1, 0, 4)
+ImageLabel.Size = UDim2.new(0, 71, 0, 56)
+ImageLabel.Image = "rbxassetid://1511398059"
+
+Scriptbutton.Name = "Scriptbutton"
+Scriptbutton.Parent = Actual
+Scriptbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scriptbutton.BackgroundTransparency = 1.000
+Scriptbutton.Position = UDim2.new(0, 244, 0, 272)
+Scriptbutton.Size = UDim2.new(0, 174, 0, 41)
+Scriptbutton.Font = Enum.Font.SourceSans
+Scriptbutton.Text = "Scripts"
+Scriptbutton.TextColor3 = Color3.fromRGB(255, 255, 252)
+Scriptbutton.TextSize = 55.000
+Scriptbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+MainButton.Name = "MainButton"
+MainButton.Parent = Actual
+MainButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.BackgroundTransparency = 1.000
+MainButton.Position = UDim2.new(0, 70, 0, 272)
+MainButton.Size = UDim2.new(0, 174, 0, 41)
+MainButton.Font = Enum.Font.SourceSans
+MainButton.Text = "Main"
+MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.TextSize = 55.000
+MainButton.TextStrokeColor3 = Color3.fromRGB(20, 20, 20)
+
+Creditbutton.Name = "Creditbutton"
+Creditbutton.Parent = Actual
+Creditbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Creditbutton.BackgroundTransparency = 1.000
+Creditbutton.Position = UDim2.new(0, 429, 0, 272)
+Creditbutton.Size = UDim2.new(0, 174, 0, 41)
+Creditbutton.Font = Enum.Font.SourceSans
+Creditbutton.Text = "Credits"
+Creditbutton.TextColor3 = Color3.fromRGB(255, 255, 252)
+Creditbutton.TextSize = 55.000
+Creditbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+-- Scripts:
+
+local function QQGB_fake_script() -- destroy.LocalScript 
+	local script = Instance.new('LocalScript', destroy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+	Actual:Destroy()
+	
+	end)
+end
+coroutine.wrap(QQGB_fake_script)()
+local function LZYPVKV_fake_script() -- Bolts.LocalScript 
+	local script = Instance.new('LocalScript', Bolts)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/timcheno3o/chicken-hub-parody-/main/bolt"))()
+	
+	
+	end)
+end
+coroutine.wrap(LZYPVKV_fake_script)()
+local function RBMT_fake_script() -- Loomian.LocalScript 
+	local script = Instance.new('LocalScript', Loomian)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
+	
+	end)
+end
+coroutine.wrap(RBMT_fake_script)()
+local function VZSNV_fake_script() -- Floppa.LocalScript 
+	local script = Instance.new('LocalScript', Floppa)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/raiseafloppa.lua"))()
+	
+	end)
+end
+coroutine.wrap(VZSNV_fake_script)()
+local function BAMNG_fake_script() -- Nuker.LocalScript 
+	local script = Instance.new('LocalScript', Nuker)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		for i,v in pairs(game.Workspace:GetChildren()) do
+			if v.Name == "Giant_1" or v.Name == "Giant_2" or v.Name == "Giant_3" or v.Name == "Giant_4" or v.Name == "Giant_5" or v.Name == "Giant_6" or v.Name == "Giant_7"
+				or v.Name == "Giant_8" or v.Name == "Giant_9" or v.Name == "Giant_10"  or v.Name == "Giant_11" then
+				for i = 0,2500 do
+					local args = {
+						[1] = {
+							[1] = {
+								[1] = v.Name,
+								[2] = 1,
+								[3] = 0.014119848916357937
+							},
+							[2] = {
+								[1] = false,
+								[2] = false,
+								[3] = false
+							}
+						}
+					}
+	
+					workspace.__THINGS.__REMOTES.giant_dealdamage:FireServer(unpack(args))
+				end
+			end
+		end
+	
+	end)
+end
+coroutine.wrap(BAMNG_fake_script)()
+local function EEQUN_fake_script() -- Vape.LocalScript 
+	local script = Instance.new('LocalScript', Vape)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() --bedwars gui 1
+	
+	end)
+end
+coroutine.wrap(EEQUN_fake_script)()
+local function CGHNWE_fake_script() -- future.LocalScript 
+	local script = Instance.new('LocalScript', future)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))() --bedwars gui 2
+	
+	end)
+end
+coroutine.wrap(CGHNWE_fake_script)()
+local function EBJBKP_fake_script() -- Scriptbutton.LocalScript 
+	local script = Instance.new('LocalScript', Scriptbutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		Tab.Visible = true
+		Main.Visible = false
+		Credits.Visible = false
+	end)
+end
+coroutine.wrap(EBJBKP_fake_script)()
+local function CTKUO_fake_script() -- MainButton.LocalScript 
+	local script = Instance.new('LocalScript', MainButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		Tab.Visible = false
+		Main.Visible = true
+		Credits.Visible = false
+	end)
+end
+coroutine.wrap(CTKUO_fake_script)()
+local function TVRVGF_fake_script() -- Creditbutton.LocalScript 
+	local script = Instance.new('LocalScript', Creditbutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+			Tab.Visible = false
+			Main.Visible = false
+			Credits.Visible = true
+	end)
+end
+
+function onKeyPress(inputObject, gameProcessedEvent)
+	if not gameProcessedEvent then
+		if inputObject.KeyCode == Enum.KeyCode.RightShift  then 
+			Actual.Visible = not Actual.Visible
+		end
+	end
+end
+game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+coroutine.wrap(TVRVGF_fake_script)()
