@@ -2751,6 +2751,7 @@ local args = {
     [3] = false,
     [5] = false,
     [6] = true
+    
 }
 
 game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(unpack(args))
@@ -3093,7 +3094,7 @@ end)
 local E=Window:Tab("Credits")
 local W=E:Section("Credits")
 
-W:Button("Bolts#8888- Owner",function()
+W:Button("Ktemp#8971- Owner",function()
     print("Button Pressed")
 end)
 W:Button("Storm - Co Owner",function()
@@ -3102,18 +3103,7 @@ end)
 W:Button("Lolcat - Helper/Slave",function()
     print("Button Pressed")
 end)
-W:Button("Copy Discord Link To Clip Board",function()
-    setclipboard("https://discord.gg/zbnGJU6Att")
-end)
-W:Button("If you try to crack this script",function()
-    setclipboard("https://discord.gg/zbnGJU6Att")
-end)
-W:Button("or try to spam the webhook ",function()
-    setclipboard("https://discord.gg/zbnGJU6Att")
-end)
-W:Button("you will be banned",function()
-    setclipboard("https://discord.gg/zbnGJU6Att")
-end)
+
 
 --[[
 Section:Slider("Slider",-100,100,8,function(x)
