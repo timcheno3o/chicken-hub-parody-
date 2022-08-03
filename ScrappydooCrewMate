@@ -1,0 +1,78 @@
+game:GetObjects("rbxassetid://10454163100")[1].Parent = workspace
+
+
+local a = game.Workspace.CrewMate.model.LH:Clone()
+
+a.Parent = game.Players.LocalPlayer.Character
+
+local b = game.Workspace.CrewMate.model.LLL:Clone()
+
+b.Parent = game.Players.LocalPlayer.Character
+
+local c = game.Workspace.CrewMate.model.LT:Clone()
+
+c.Parent = game.Players.LocalPlayer.Character
+
+local d = game.Workspace.CrewMate.model.LUL:Clone()
+
+d.Parent = game.Players.LocalPlayer.Character
+
+local e = game.Workspace.CrewMate.model.RH:Clone()
+
+e.Parent = game.Players.LocalPlayer.Character
+
+local f = game.Workspace.CrewMate.model.RLL:Clone()
+
+f.Parent = game.Players.LocalPlayer.Character
+
+local g = game.Workspace.CrewMate.model.RUL:Clone()
+
+g.Parent = game.Players.LocalPlayer.Character
+
+local h = game.Workspace.CrewMate.model.UT:Clone()
+
+h.Parent = game.Players.LocalPlayer.Character
+
+game.Workspace.CrewMate.model.Humanoid.Name = "Humanoid1"
+
+local lol = game.Workspace.CrewMate.model.Humanoid1:Clone()
+
+lol.Parent = game.Players.LocalPlayer.Character
+
+
+game.Workspace.CrewMate.model:Destroy()
+
+game.Workspace.CrewMate:Destroy()
+
+game.Players.LocalPlayer.Character.Humanoid1:Destroy()
+
+game.Players.LocalPlayer.Character.FakeHead:Destroy()
+
+game.Players.LocalPlayer.Character.Cap.Handle:Destroy()
+
+game.Players.LocalPlayer.Character.NerdHair.Handle:Destroy()
+
+wait(10)
+
+game.Players.LocalPlayer.Character.LeftLowerArm.Transparency = "1"
+game.Players.LocalPlayer.Character.LeftUpperArm.Transparency = "1"
+game.Players.LocalPlayer.Character.RightLowerArm.Transparency = "1"
+game.Players.LocalPlayer.Character.RightUpperArm.Transparency = "1"
+game.Players.LocalPlayer.Character.LeftFoot.Transparency = "1"
+game.Players.LocalPlayer.Character.LeftLowerLeg.Transparency = "1"
+game.Players.LocalPlayer.Character.LeftUpperLeg.Transparency = "1"
+game.Players.LocalPlayer.Character.RightFoot.Transparency = "1"
+game.Players.LocalPlayer.Character.RightLowerLeg.Transparency = "1"
+game.Players.LocalPlayer.Character.RightUpperLeg.Transparency = "1"
+game.Players.LocalPlayer.Character.UpperTorso.Transparency = "1"
+game.Players.LocalPlayer.Character.RightHand.Transparency = "1"
+game.Players.LocalPlayer.Character.LeftHand.Transparency = "1"
+
+game:GetObjects("rbxassetid://10464694852")[1].Parent = Workspace
+
+game.Workspace.Impos.Name = "CrewMate"
+
+game.Workspace.CrewMate.Parent = game.ReplicatedStorage.Viewmodels.Arms
+
+
+game.Players.LocalPlayer.Data.Skin.Value = "CrewMate"
