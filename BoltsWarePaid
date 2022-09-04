@@ -1,4 +1,4 @@
--- leaked by Inno#3654
+-- leaked by Inno#3654 and Ktemp#7722
 Library=loadstring(game:HttpGet("https://pastebin.com/raw/bfSMHFwJ"))()
 
 Client = {
