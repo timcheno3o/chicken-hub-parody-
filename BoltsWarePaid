@@ -1,5 +1,6 @@
 -- leaked by Inno#3654 and Ktemp#7722
 -- leaked by https://discord.gg/x3xgygrMyt
+-- Added Projectile Gun because bolts removed it for some reason
 Library=loadstring(game:HttpGet("https://pastebin.com/raw/bfSMHFwJ"))()
 
 Client = {
@@ -859,11 +860,16 @@ CombatTabMainSection:Dropdown("Bomb",{"Basic","Golden","Cherry (Infinite)"},func
 end)]]
 
 
-
-
-
-
 local CombatTabGunmodsSection=CombatTab:Section("Gunmods")
+
+CombatTabGunmodsSection:ToggleSlider("Projectile Gun",0,1000,500,function(x,y)
+    ArsoniaTable.Combat.Gunmods.Baseballgun=x
+    ArsoniaTable.Combat.Gunmods.BaseballgunSpeed=y
+end)
+CombatTabGunmodsSection:Dropdown("Projectile",ArsoniaTable.Variables.BaseBallNamesVisual,function(x)
+    ArsoniaTable.Combat.Gunmods.BaseballgunValue=x
+end)
+
 CombatTabGunmodsSection:Toggle("Enable Gun Mods",function(x)
     ArsoniaTable.Combat.Gunmods.Enabled=x
     if x then
@@ -962,9 +968,6 @@ CombatTabGunmodsSection:Toggle("Enable Gun Mods",function(x)
     getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Client).givetools()
     require(game.Players.LocalPlayer.PlayerGui.GUI.Client.Functions.Weapons).usethatgun()
 end)
-
-
-
 
 
 
